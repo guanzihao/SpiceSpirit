@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.home-swiper{
+  margin-top: 20rpx;
+  width: 100%;
+  text-align: center;
+}
+.home-swiper swiper-item{
+  width: 100%;
+}
+.button{
+  margin-top: 30rpx;
+}
+input{
+  border: 2px solid red;
+  height: 100rpx;
+}
