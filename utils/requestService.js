@@ -1,8 +1,12 @@
-var sendRrquest = function (url, method, data) {
+var sendRrquest = function (url, method, objc) {
+  let objcString = ''
+  for (let key in objc) {
+    objcString = objcString.concat(key, "=", objc[key], "&")
+  }
   var promise = new Promise(function (resolve, reject) {
     wx.request({
-      url: url,
-      data: data,
+      url: url + "?" + objcString,
+      data: {},
       method: method,
       header: 'application/x-www-form-urlencoded',
       success: resolve,

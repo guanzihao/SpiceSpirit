@@ -30,11 +30,11 @@ Page({
   makePhone:function(){
     wx.showModal({
       title:"提示",
-      content:"你将使用运营商拨打电话4008166188",
+      content:"你将使用运营商拨打电话：13733899544",
       success:function(res){
         if (res.confirm) {
               wx.makePhoneCall({
-                phoneNumber:'4008166188'
+                phoneNumber:'13733899544'
               })
           }
       }

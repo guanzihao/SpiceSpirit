@@ -8,6 +8,41 @@
       </block>
     </swiper>
   </view>
+<button type="primary" bindtap="openSetting"> openSetting </button>
+
+
+
+<button type="primary" bindtap="addCard"> addCard </button>
+
+<button type="primary" bindtap="redirectTo"> redirectTo </button>
+<button type="primary" bindtap="navigateTo"> navigateTo </button>
+
+
+<button type="primary" bindtap="setTopBarText"> setTopBarText </button>
+
+<button type="primary" bindtap="setTabBarItem"> setTabBarItem </button>
+
+<button type="primary" bindtap="setTabBarStyle"> setTabBarStyle </button>
+
+<button type="primary" bindtap="showTabBarRedDot"> showTabBarRedDot </button>
+<button type="primary" bindtap="removeTabBarBadge"> removeTabBarBadge </button>
+
+<button type="primary" bindtap="setTabBarBadge"> setTabBarBadge </button>
+
+
+
+
+<button type="primary" bindtap="setNavigationBarColor"> setNavigationBarColor </button>
+<button type="primary" bindtap="setNavigationBarTitle"> setNavigationBarTitle </button>
+
+
+
+  <button type="primary" bindtap="showToast"> showToast </button>
+  <button type="primary" bindtap="showActionSheet"> showActionSheet </button>
+
+
+
+
   <view class='button'>
     <form bindsubmit="formSubmit" report-submit="true">
     <input name="input" class="input" placeholder="please input here" />
@@ -15,6 +50,27 @@
     <button formType="reset">Reset</button>
   </form>
     <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="primary" bindtap='sendMess'> 发送模版消息 </button>
+        disabled="{{disabled}}" bindtap="primary" bindtap='sendMess' > 发送模版消息 </button>
+<button type="primary" bindtap="primary" session-from open-type="contact">进入会话事件</button>
+
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> getPhoneNumber</button>
+<button type="primary" bindtap="authorize" session-from open-type="contact">用户发起授权请求</button>
+<view>
+ <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}"  bindtap='sendMesss' > 测试按钮 </button>
+ <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}"  bindtap='sendMess1' > 获取数据 </button>
+<button type="default" bindtap="openBtnClick"> 开启连接 </button>
+<button type="default" bindtap="sendBtnClick"> 发送消息 </button>
+<button type="default" bindtap="closeBtnClick"> 关闭连接 </button>
+
+<button type="primary" bindtap="startWifi"> startWifi </button>
+<button type="primary" bindtap="getWifiList"> getWifiList </button>
+<button type="primary" bindtap="showModal"> showModal </button>
+
+<button type="primary" bindtap="messsges"> 返回顶部 </button>
+
+<text>{{messsges}}</text>
+</view>
   </view>
 </view>

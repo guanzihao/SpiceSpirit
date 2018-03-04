@@ -85,6 +85,7 @@ page{
     position: absolute;
     top: 160rpx;
     display: flex;
+    justify-content: center;
     z-index: 100;
    
 }
@@ -185,4 +186,8 @@ page{
 .shopcar-view image{
     width: 110rpx;
     height: 110rpx;
+}
+.gd{
+  font-size: 15px;
+  text-align: center;
 }

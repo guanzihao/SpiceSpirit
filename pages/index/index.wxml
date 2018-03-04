@@ -27,6 +27,7 @@
     <!--内容区域-->
     
     <block wx:if="{{current_id == 0}}">
+      <scroll-view scroll-y style="height: 1000px;" bindscrolltolower="lower" scroll-into-view="{{toView}}" lower-threshold="30px">
         <view class="content-view hot" scroll-y="true">
             <block wx:for="{{hot_goods}}" wx:key="{{id}}" wx:for-item="good">
                 <view class="hot-item">
@@ -40,9 +41,18 @@
                     </view>
                 </view>
              </block>
+             <view class='gd' wx:if="{{isData}}">
+                玩命的加载中...
+              </view>
+              <view class='gd' wx:else>
+                没有更多内容了
+              </view>
         </view>
+        
+       </scroll-view>
     </block>
     <block wx:else>
+     <scroll-view scroll-y style="height: 1500rpx;" bindscrolltolower="lowers" scroll-into-view="{{toView}}" lower-threshold="30px">
         <view class="content-view common" scroll-y="true" >
             <block wx:for="{{common_goods}}" wx:key="{{id}}" wx:for-item="good">
                 <view class="common-item">
@@ -52,13 +62,14 @@
                         <text style="font-size:22rpx;color:#7c7c7c;">月销量</text>
                         <text style="font-size:18rpx;color:#ed4040;margin-left:10rpx;">{{good.sellCount}}</text>
                     </view>
-                    <text class="common-price">{{good.price}}元</text>
+                    <text class="common-price">{{good.goodPrice}}元</text>
                     <view class="add-button">
                         <image src="../../images/foodAdd.png" style="width:40rpx;height:40rpx;"></image>
                     </view>
                 </view>
              </block>
         </view>
+         </scroll-view>
     </block>
 </view>
 <!--购物车图标-->

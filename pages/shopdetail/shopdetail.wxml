@@ -1,12 +1,21 @@
 <view class="detal-view">
-    <image src="{{good.pic}}" class="shop-pic"></image>
+    <image src="{{good.goodPic}}" class="shop-pic"></image>
     <view style="margin-top:20rpx;text-align:center">
-        <text style="font-size:34rpx;">{{good.name}}</text>
+        <text style="font-size:34rpx;">{{good.goodName}}</text>
     </view>
     <view class="content-view">
-        <text style="font-size:22rpx;color:#888e97">{{good.name}}</text>
-        <text style="font-size:22rpx;color:#ed4040">{{good.price}}元/份</text>
+        <text class='good-cl'>{{good.goodName}}</text>
+        <text class='good-cl'>{{good.goodPrice}}元/件</text>
     </view>
+    <view class='content-good-info'>
+      <view>
+        <text class='good-cl'>商品描述：</text>
+      </view>
+      <view class='good-info'>
+        <text>{{good.info}}</text>
+      </view>
+    </view>
+
     <view class="buy-view">
         <view class="add-tocar">
             加入购物车

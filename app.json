@@ -13,14 +13,16 @@
     "pages/shopdetail/shopdetail",
     "pages/buycar/buycar",
     "pages/addAddress/addAddress",
-    "pages/editarea/editarea"
-   
+    "pages/editarea/editarea",
+    "pages/home_test/home_test"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#4ba8b1",
     "navigationBarTitleText": "麻小外卖",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "blue",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#8a8a8a",
@@ -30,14 +32,20 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "images/food_nor.png",
-        "selectedIconPath": "images/food_sel.png"
+        "iconPath": "images/index_2.png",
+        "selectedIconPath": "images/index_1.png"
       },
       {
         "pagePath": "pages/index/index",
         "text": "美食",
         "iconPath": "images/food_nor.png",
         "selectedIconPath": "images/food_sel.png"
+      },
+      {
+        "pagePath": "pages/buycar/buycar",
+        "text": "购物车",
+        "iconPath": "images/shopcar_2.png",
+        "selectedIconPath": "images/shopcar_1.png"
       },
       {
         "pagePath": "pages/me/me",

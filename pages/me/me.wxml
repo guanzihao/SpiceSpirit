@@ -18,7 +18,10 @@
         <view class="line_v_1 line_v"></view>
         <view class="line_v_2 line_v"></view>
     </view>
-    <view class="tel-view" bindtap="makePhone">
-        <text style="color:#c30000;font-size:30rpx">4008-166-188</text>
-    </view>
+    
+   <view>
+       <button type="default" size="default" hover-class="other-button-hover" open-type="contact">联系在线客服</button>
+       <button type="default" size="default" bindtap="makePhone" hover-class="other-button-hover"
+       >拨打电话</button>
+   </view>
 </view>
