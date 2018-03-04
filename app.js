@@ -105,7 +105,7 @@ App({
       return ""
     }
   },pathUrl: {
-    url: 'http://192.168.0.117:8081/'
+    url: 'http://192.168.1.104:8081/'
   },
   uploadFile: function (url, file, i) {//递归调用
     console.log("file路径为" + file);
